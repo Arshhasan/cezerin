@@ -29,11 +29,11 @@ const getNumberIfPositive = value => {
 };
 
 const getBooleanIfValid = (value, defaultValue = null) => {
-	if (value === 'true' || value === 'false') {
-		return value === 'true';
-	} else {
-		return typeof value === 'boolean' ? value : defaultValue;
-	}
+	
+	(value === 'true' || value === 'false') ?
+	{return value === 'true';} :
+	return typeof value === 'boolean' ? value : defaultValue;
+	
 };
 
 const getObjectIDIfValid = value => {
